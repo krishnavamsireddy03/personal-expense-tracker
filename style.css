@@ -1,0 +1,22 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f7f7f7;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+h1, h3 {
+    color: #333;
+}
+input, button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 300px;
+}

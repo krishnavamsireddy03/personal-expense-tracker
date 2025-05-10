@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <a href="/add">+ Add Expense</a>
+    <h3>Total Spent: ₹{{ total }}</h3>
+    <table>
+        <tr>
+            <th>Title</th><th>Amount</th><th>Category</th><th>Date</th>
+        </tr>
+        {% for exp in expenses %}
+        <tr>
+            <td>{{ exp[1] }}</td>
+            <td>₹{{ exp[2] }}</td>
+            <td>{{ exp[3] }}</td>
+            <td>{{ exp[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
